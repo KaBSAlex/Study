@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" name="Login">
+    <fieldset>
+      <legend>FORMULÁRIO</legend>
+
+      <div class="form">
+        <label>
+          *Nome:
+          <input nome="nome" type="text" autocomplete="name" title="Digite seu nome completo" required>
+        </label>
+        <label>
+          *Email: 
+          <input size="10" name="email" type="email" autocomplete="email"  required>
+        </label>
+        <label>
+          *Senha: 
+          <input name="password" type="password" minlength="8" maxlength="16" pattern="[0-9a-fA-F] {4,8}" title="Senha de até 8 caracteres, use letra minusculas, maisculas e caracteres especiais (@, !, #)." inputmode="numeric" required>
+        </label>
+        <label>
+          *Idade:
+          <input name="age" type= "number" name="" id="">
+        </label>
+        <label>
+          *Selecione a data:
+          <input name="data" type="date">
+        </label>
+        <label>
+          Selecione o arquivo:
+          <input name="file" type="file" accept="audio/*"  multiple>
+        </label>
+
+        <label for="subscribe">Sexo:</label>
+        <label for="subscribe">
+          Masculino: <input id="subscribe" name="subscribe" type="checkbox">
+          Feminino: <input id="subscribe" name="subscribe" type="checkbox">
+        </label>
+
+
+        <input type="text" list="option" placeholder="Escolha o Tipo">
+        <datalist id="option">
+          <option>Logar</option>
+          <option>Logar</option>
+          <option>Logar</option>
+          <option>Logar</option>
+          <option>Logar</option>
+        </datalist>
+      </div>
+
+
+      <fieldset>
+        <legend>ESCOLHA SEUS ESTILOS</legend>
+        <div class="list_form">
+          <div class="list_one">
+            <label for="film">Filme</label>
+            <input type="checkbox" name="Filme" id="filme_box">
+            <label for="serie_box">Serie</label>
+            <input type="checkbox" name="" id="serie_box">
+            <label for="sport_box">Esporte</label>
+            <input type="checkbox" name="" id="sport_box">
+            <label for="anime_box">Anime</label>
+            <input type="checkbox" name="" id="anime_box">
+            <label for="animal_box">Animal</label>
+            <input type="checkbox" name="" id="animal_box">
+          </div>
+  <br>
+          <div class="list_two">
+            <label for="book_box">Dormir</label>
+            <input type="checkbox" name="" id="book_box">
+            <label for="sleep_box">Deitar</label>
+            <input type="checkbox" name="" id="sleep_box">
+            <label for="play_box">Jogar</label>
+            <input type="checkbox" name="" id="play_box">
+            <label for="walk_box">Passear</label>
+            <input type="checkbox" name="" id="walk_box">
+            <label for="toplay_box">Brincar</label>
+            <input type="checkbox" name="" id="toplay_box">
+          </div>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Gostaria de um café?</legend>
+
+        <label for="yep">Sim</label>
+        <input type="radio" name="coffe" id="yep" value="yes"> 
+
+        <label for="no">Não</label>
+        <input checked type="radio" name="coffe" id="nono" value="no">
+  
+      </fieldset>
+      <br>
+
+      <form action="">
+        <label for="search">Pesquisar</label>
+        <input id="search" type="search" name="q" list="option"
+        placeholder="Digite sua pesquisa" aria-label="search">
+        <button>Pesquisar</button>
+      </form>
+      <br>  
+      <label for="">Pesquisar por ID</label>
+      <input type="text" pattern="[0-9]{2}" size="4"
+      maxlength="4" title="Apenas forma numérica para o ID ">
+      <button>Pesquisar</button>
+      <br><br>
+
+      <label for="avaliacao">Avaliação para o formulário</label>
+      <input type="range" name="avaliacao" id="avaliacao" min="0" max="10" value="10" step="1">
+
+    </fieldset>
+    <button type="submit" >Enviar</button>
+    <button type="reset">Limpar</button>
+
+  </form>
+</body>
+</html>
